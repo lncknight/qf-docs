@@ -16,5 +16,5 @@ COPY ./ ./
 
 RUN npm -g i serve
 
-RUN npm i
-RUN yarn build
+# RUN npm i
+# RUN yarn build
