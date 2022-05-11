@@ -12,6 +12,12 @@ jobs:
       - run: printenv
       # - run: echo $env:GITHUB_HEAD_REF_NAME
       # - run: echo ${{github.HEAD_REF_NAME}}
+      # ref: https://stackoverflow.com/questions/60300169/how-to-get-branch-name-on-github-action
+      - name: Set output
+        id: vars
+        run: echo ::set-output name=short_ref::${GITHUB_REF_NAME}
+      - name: Check output
+        run: echo ${{ steps.vars.outputs.short_ref }}
       - uses: actions/checkout@v2
       - uses: akhileshns/heroku-deploy@v3.12.12 # This is the action
         with:
