@@ -19,6 +19,7 @@ markdown_extensions:
 
 copyright: qfpay
 site_name: QF Pay Docs
+base_url: '/'
 
 theme:
   name: material
