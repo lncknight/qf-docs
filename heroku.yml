@@ -1,6 +1,7 @@
+# confirm to del
 build:
   docker:
-    web: Dockerfile.heroku
+    web: Dockerfile
     # web: nginx/Dockerfile
 run:
   web: serve -s site -p $PORT

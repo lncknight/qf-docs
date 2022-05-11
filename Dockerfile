@@ -5,4 +5,16 @@ RUN pip install mkdocs-material
 RUN apk update
 RUN apk add bash inotify-tools
 
-CMD start.sh
+# CMD start.sh
+
+RUN apk update && apk add bash nodejs npm
+
+# Create app directory
+# WORKDIR /usr/src/app
+
+COPY ./ ./
+
+RUN npm -g i serve
+
+RUN npm i
+RUN yarn build
