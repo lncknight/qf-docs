@@ -16,5 +16,7 @@ COPY ./ ./
 
 RUN npm -g i serve
 
+RUN mkdocs build
+
 # RUN npm i
 # RUN yarn build
