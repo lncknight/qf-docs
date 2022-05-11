@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: printenv
-      - run: echo ${GITHUB_HEAD_REF}
+      - run: echo $GITHUB_HEAD_REF
       - uses: actions/checkout@v2
       - uses: akhileshns/heroku-deploy@v3.12.12 # This is the action
         with:
