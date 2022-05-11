@@ -17,4 +17,4 @@ jobs:
           heroku_app_name: ${{secrets.HEROKU_APP_NAME}}
           heroku_email: ${{secrets.HEROKU_EMAIL}}
           stack: 'container'
-          branch: ${{env.GITHUB_REF_NAME}}
+          branch: ${{GITHUB_REF_NAME}}
