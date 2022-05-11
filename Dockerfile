@@ -14,6 +14,8 @@ RUN apk update && apk add bash nodejs npm
 
 COPY ./ ./
 
+RUN ls -al
+
 RUN npm -g i serve
 
 RUN mkdocs build
