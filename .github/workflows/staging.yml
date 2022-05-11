@@ -26,3 +26,4 @@ jobs:
           heroku_email: ${{secrets.HEROKU_EMAIL}}
           stack: 'container'
           branch: 'staging'
+          remote_branch: 'main'
