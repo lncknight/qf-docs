@@ -18,7 +18,7 @@ COPY ./ ./
 RUN ls -al
 RUN pwd
 
-RUN npm -g i serve
+RUN npm -g i serve http-server
 
 RUN mkdocs build
 
