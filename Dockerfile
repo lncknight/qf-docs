@@ -18,5 +18,8 @@ RUN npm -g i serve
 
 RUN mkdocs build
 
+ENTRYPOINT []
+
+
 # RUN npm i
 # RUN yarn build
