@@ -7,7 +7,8 @@ RUN apk add bash inotify-tools
 
 # CMD start.sh
 
-RUN apk update && apk add bash nodejs npm
+RUN apk add bash nodejs npm
+RUN apk add nginx
 
 # Create app directory
 # WORKDIR /usr/src/app
